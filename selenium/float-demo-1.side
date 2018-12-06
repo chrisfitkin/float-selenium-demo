@@ -1,0 +1,123 @@
+{
+  "id": "25991d9c-b9d9-4330-a6b7-48d4ca771784",
+  "version": "1.1",
+  "name": "float-demo-1",
+  "url": "https://chrisfitkin.github.io/float-selenium-demo/#/posts",
+  "tests": [{
+    "id": "49ef9ecd-ebaa-4a63-b260-327f35b1f25a",
+    "name": "test 2",
+    "commands": [{
+      "id": "5d091c31-a9e7-4298-88c4-fcb25c1f7f7a",
+      "comment": "",
+      "command": "open",
+      "target": "https://chrisfitkin.github.io/float-selenium-demo/#/posts",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "239b424f-8805-4dc2-b561-ec853f8ef9e7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1434x1027",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b68dbc7-2b31-4236-aaa8-f3c8f6385a17",
+      "comment": "",
+      "command": "click",
+      "target": "css=#\\31 3 .MuiButtonBase-root-170:nth-child(1) .translate-Button--label-109",
+      "targets": [
+        ["css=#\\31 3 .MuiButtonBase-root-170:nth-child(1) .translate-Button--label-109", "css:finder"],
+        ["xpath=//td[@id='13']/div/a/span/span", "xpath:idRelative"],
+        ["xpath=//td[8]/div/a/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e3c1e28-2cbc-4d0c-8c5b-794053c9407e",
+      "comment": "",
+      "command": "click",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["name=title", "name"],
+        ["css=#title", "css"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/main/div[2]/div/div/form/div[2]/span/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a1880df-515a-48b6-8a0d-4c5a37069e68",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ra-input:nth-child(2) .MuiInput-root-83 path",
+      "targets": [
+        ["css=.ra-input:nth-child(2) .MuiInput-root-83 path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b4257dd-e5f6-4fab-84a5-b3855259b210",
+      "comment": "",
+      "command": "click",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["name=title", "name"],
+        ["css=#title", "css"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/main/div[2]/div/div/form/div[2]/span/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7feb3dce-5501-4798-bc0c-0571a1c424f6",
+      "comment": "",
+      "command": "type",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["name=title", "name"],
+        ["css=#title", "css"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/main/div[2]/div/div/form/div[2]/span/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "this is a new title"
+    }, {
+      "id": "af066851-e990-413d-b8be-0c1eb76af739",
+      "comment": "",
+      "command": "click",
+      "target": "css=div.layout.Layout-root-13",
+      "targets": [
+        ["css=div.layout.Layout-root-13", "css"],
+        ["css=.layout", "css:finder"],
+        ["xpath=//div[@id='root']/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d2bf878-01ff-48a6-b34f-9ded17d8895c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButton-contained-206 > .MuiButton-label-198",
+      "targets": [
+        ["css=.MuiButton-contained-206 > .MuiButton-label-198", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/main/div[2]/div/div/form/div[3]/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f258e13b-9670-4cde-9649-811f4fae3097",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://chrisfitkin.github.io/", "https://chrisfitkin.github.io/float-selenium-demo/#/posts"],
+  "plugins": []
+}
