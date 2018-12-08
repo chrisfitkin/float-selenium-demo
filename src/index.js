@@ -26,6 +26,11 @@ render(
         customRoutes={[
             <Route
                 exact
+                path="/bad"
+                noLayout
+            />,
+            <Route
+                exact
                 path="/custom"
                 component={CustomRouteNoLayout}
                 noLayout

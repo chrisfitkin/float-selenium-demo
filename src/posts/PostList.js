@@ -79,56 +79,65 @@ const PostListActionToolbar = withStyles({
 ));
 
 const PostList = withStyles(styles)(({ classes, ...props }) => (
-    <List
-        {...props}
-        bulkActionButtons={<PostListBulkActions />}
-        filters={<PostFilter />}
-        sort={{ field: 'published_at', order: 'DESC' }}
-    >
-        <Responsive
-            small={
-                <SimpleList
-                    primaryText={record => record.title}
-                    secondaryText={record => `${record.views} views`}
-                    tertiaryText={record =>
-                        new Date(record.published_at).toLocaleDateString()
-                    }
-                />
-            }
-            medium={
-                <Datagrid>
-                    <TextField source="id" />
-                    <TextField source="title" cellClassName={classes.title} />
-                    <DateField
-                        source="published_at"
-                        cellClassName={classes.publishedAt}
+    <Fragment >
+        <List
+            {...props}
+            bulkActionButtons={<PostListBulkActions />}
+            filters={<PostFilter />}
+            sort={{ field: 'published_at', order: 'DESC' }}
+        >
+            <Responsive
+                small={
+                    <SimpleList
+                        primaryText={record => record.title}
+                        secondaryText={record => `${record.views} views`}
+                        tertiaryText={record =>
+                            new Date(record.published_at).toLocaleDateString()
+                        }
                     />
+                }
+                medium={
+                    <Datagrid>
+                        <TextField source="id" />
+                        <TextField source="title" cellClassName={classes.title} />
+                        <DateField
+                            source="published_at"
+                            cellClassName={classes.publishedAt}
+                        />
 
-                    <BooleanField
-                        source="commentable"
-                        label="resources.posts.fields.commentable_short"
-                        sortable={false}
-                    />
-                    <NumberField source="views" />
-                    <ReferenceArrayField
-                        label="Tags"
-                        reference="tags"
-                        source="tags"
-                        cellClassName={classes.hiddenOnSmallScreens}
-                        headerClassName={classes.hiddenOnSmallScreens}
-                    >
-                        <SingleFieldList>
-                            <ChipField source="name" />
-                        </SingleFieldList>
-                    </ReferenceArrayField>
-                    <PostListActionToolbar>
-                        <EditButton />
-                        <ShowButton />
-                    </PostListActionToolbar>
-                </Datagrid>
-            }
-        />
-    </List>
+                        <BooleanField
+                            source="commentable"
+                            label="resources.posts.fields.commentable_short"
+                            sortable={false}
+                        />
+                        <NumberField source="views" />
+                        <ReferenceArrayField
+                            label="Tags"
+                            reference="tags"
+                            source="tags"
+                            cellClassName={classes.hiddenOnSmallScreens}
+                            headerClassName={classes.hiddenOnSmallScreens}
+                        >
+                            <SingleFieldList>
+                                <ChipField source="name" />
+                            </SingleFieldList>
+                        </ReferenceArrayField>
+                        <PostListActionToolbar>
+                            <EditButton />
+                            <ShowButton />
+                        </PostListActionToolbar>
+                    </Datagrid>
+                }
+            />
+        </List>
+        <div>
+            <ul><a href="#" onClick={(event) => {
+                event.preventDefault();
+                throw new Error("Custom error for team float");
+            }}>Go to Comments</a></ul>
+            <ul><a href="#/bad-url">Go to Tags</a></ul>
+        </div>
+    </Fragment>
 ));
 
 export default PostList;
